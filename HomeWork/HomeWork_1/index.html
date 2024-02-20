@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeWork1</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Создать кнопку "Перевернуть". При клике на кнопку текст кнопки должен 
+    перевернуться и отобразиться в обратном порядке. -->
+    <button @click="textReverse">{{ textButton }}</button>
+
+    <!-- Есть список элементов. Пользователь может добавлять новые элементы списка
+    с текстом “Новый элемент списка” нажав на кнопку "Добавить". -->
+    <!-- *Дополнительное задание: При клике на элемент списка он должен быть 
+    удален. (по желанию) -->
+    <h2>Список элементов</h2>
+    <button @click="addElem">Добавить элемент</button>
+    <ul>
+      <li v-for="(elem, index) in elements" :key="index" @click="removeElem(index)">{{elem}}</li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./script/main.js"></script>
+
+</body>
+</html>
