@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "var";
 
 body {
   background-color: #fff;
@@ -6,7 +7,9 @@ body {
   font-size: 22px;
   line-height: 150%;
   font-weight: 400;
+  color: $text-color;
 }
+
 .page-title {
   text-align: center;
   text-transform: capitalize;
@@ -15,7 +18,7 @@ body {
   font-size: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
-  color: #292f36;
+  color: $text-color2;
 }
 
 .icon {
@@ -91,7 +94,7 @@ page-logo {
 
   &__link {
     font-family: "Jost", sans-serif;
-    color: #292f36;
+    color: $text-color2;
   }
 }
 
@@ -115,7 +118,7 @@ page-logo {
     font-weight: 400;
     font-size: 65px;
     line-height: 125%;
-    color: #292f36;
+    color: $text-color2;
   }
 
   &__text {
@@ -131,7 +134,7 @@ page-logo {
     border-radius: 18px;
     padding: 26px 47px 26px 48px;
     box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
-    background: #292f36;
+    background: $text-color2;
 
     &-text {
       margin: 0 10px 0 0;
@@ -219,7 +222,7 @@ page-logo {
     font-size: 25px;
     line-height: 125%;
     letter-spacing: 0.02em;
-    color: #292f36;
+    color: $text-color2;
   }
   &__card-info {
     font-family: "Jost", sans-serif;
@@ -227,7 +230,6 @@ page-logo {
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: #4d5053;
   }
 
   &__icon-arrow {
@@ -290,7 +292,6 @@ page-logo {
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: #4d5053;
   }
 }
 
@@ -302,6 +303,10 @@ page-logo {
     width: 100%;
     margin: 0 auto 52px;
     text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 12px;
   }
 
   &__list-articles {
@@ -343,7 +348,6 @@ page-logo {
     line-height: 150%;
     letter-spacing: 0.01em;
     text-transform: capitalize;
-    color: #4d5053;
     background: #fff;
     border-radius: 8px 8px 8px 0;
   }
@@ -358,7 +362,7 @@ page-logo {
     font-size: 25px;
     line-height: 125%;
     letter-spacing: 0.02em;
-    color: #292f36;
+    color: $text-color2;
   }
 
   &__date-wrapper {
@@ -372,7 +376,6 @@ page-logo {
     line-height: 150%;
     letter-spacing: 0.01em;
     text-transform: capitalize;
-    color: #4d5053;
   }
 
   &__icon-arrow {
@@ -385,5 +388,95 @@ page-logo {
     height: 16px;
     background: url(../../images/arrow-products-small.svg) no-repeat center /
       cover;
+  }
+}
+
+.page-footer {
+  padding-bottom: 134px;
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__logo {
+    margin-bottom: 18px;
+  }
+
+  &__text-info {
+    max-width: 395px;
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  &__icons-wrapper {
+    max-width: 395px;
+    width: 100%;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 54px;
+  }
+
+  &__icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 22px;
+
+    & svg {
+      display: block;
+    }
+  }
+
+  &__links-wrapper {
+    max-width: 705px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__nav {
+    max-width: 125px;
+    width: 100%;
+  }
+
+  &__contacts {
+    max-width: 258px;
+    width: 100%;
+  }
+
+  &__nav-list,
+  &__contacts-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &-item {
+    letter-spacing: 0.01em;
+  }
+
+  &-link {
+    color: #4d5053;
+  }
+
+  &-title {
+    margin-bottom: 27px;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    color: $text-color2;
   }
 }
