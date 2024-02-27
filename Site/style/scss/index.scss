@@ -1,0 +1,198 @@
+@import "style";
+
+.promo {
+  &__background-image {
+    min-height: 758px;
+    padding: 0 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url(../../images/promo-background.jpg) no-repeat center / cover;
+    border-radius: 70px;
+  }
+
+  &__title {
+    margin: 0 0 18px;
+    max-width: 435px;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 125%;
+    color: $text-color2;
+  }
+
+  &__text {
+    max-width: 435px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    padding: 26px 47px 26px 48px;
+    box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+    background: $text-color2;
+
+    &-text {
+      margin: 0 10px 0 0;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #fff;
+    }
+
+    &-icon {
+      width: 18px;
+      height: 17px;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+}
+
+.projects {
+  padding: 96px 0;
+  &__description {
+    max-width: 738px;
+    width: 100%;
+    margin: 0 auto 93px;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 56px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__item:nth-child(1) &__image {
+    border-radius: 0 80px 0 0;
+  }
+  &__item:nth-child(2) &__image {
+    border-radius: 80px 0 0;
+  }
+  &__item:nth-child(3) &__image {
+    border-radius: 0 0 80px 0;
+  }
+  &__item:nth-child(4) &__image {
+    border-radius: 0 0 0 80px;
+  }
+  &__image-wrapper {
+    max-width: 548px;
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  &__image {
+    display: block;
+    max-width: 548px;
+    width: 100%;
+  }
+  &__card-description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__card-name {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: $text-color2;
+  }
+  &__card-info {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+
+  &__icon-arrow {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__icon-image {
+    width: 10px;
+    height: 20px;
+  }
+}
+
+.quality {
+  background-color: #f4f0ec;
+
+  &__wrapper {
+    padding: 151px 0;
+  }
+  &__list {
+    max-width: 1082px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #cda274;
+      width: 130px;
+      height: 1px;
+      transform: rotate(90deg);
+      bottom: 72px;
+      left: -142px;
+    }
+  }
+  &__text-count {
+    margin: 0 0 16px;
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #cda274;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+}

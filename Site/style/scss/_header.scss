@@ -1,0 +1,26 @@
+.page-header {
+  padding: 55px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  &__item {
+    font-size: 20px;
+    line-height: 125%;
+  }
+
+  &__link {
+    font-family: "Jost", sans-serif;
+    color: $text-color2;
+  }
+}

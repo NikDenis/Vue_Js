@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeWork2</title>
+</head>
+<body>
+
+  <!-- Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где
+  каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить
+  пользователю возможность сортировать товары по цене (по возрастанию и по убыванию). -->
+
+
+  <div id="app">
+    <ul>
+      <li v-for="product in products" :key="product.id">
+        <span>{{product.title}}</span>
+        <br>
+        <span>{{product.price}}</span>
+      </li>
+    </ul>
+    <button @click="ascending">По возрастанию</button>
+    <button @click="descending">По убыванию</button>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./script/main.js"></script>
+</body>
+</html>
