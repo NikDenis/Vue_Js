@@ -34,6 +34,7 @@
   }
 
   &__title {
+    text-transform: capitalize;
     font-family: "DM Serif Display", sans-serif;
     font-weight: 400;
     font-size: 50px;
@@ -57,8 +58,11 @@
     padding: 22px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
+    gap: 65px;
+    border: 1px solid #e7e7e7;
+    border-radius: 62px;
   }
 
   &__image-wrapper {
@@ -91,12 +95,24 @@
   &__text {
     letter-spacing: 0.01em;
     margin-bottom: 41px;
+
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
   }
 
   &__date-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #4d5053;
   }
 
   &__icon-arrow {
@@ -107,5 +123,23 @@
   &__icon-image {
     width: 8px;
     height: 16px;
+  }
+}
+
+.news {
+  padding: 0 0 200px;
+
+  &__description {
+    margin: 0 0 30px;
+  }
+
+  &__title {
+    text-align: left;
+    margin: 0;
+  }
+
+  &__list-articles {
+    column-gap: 27px;
+    row-gap: 30px;
   }
 }
