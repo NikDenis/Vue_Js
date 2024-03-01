@@ -50,6 +50,11 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
+
+    &--blog-details {
+      justify-content: flex-start;
+      gap: 101px;
+    }
   }
 
   &__nav {

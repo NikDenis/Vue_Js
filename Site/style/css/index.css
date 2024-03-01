@@ -68,6 +68,10 @@
   justify-content: space-between;
   gap: 20px;
 }
+.page-footer__links-wrapper--blog-details {
+  justify-content: flex-start;
+  gap: 101px;
+}
 .page-footer__nav {
   max-width: 125px;
   width: 100%;

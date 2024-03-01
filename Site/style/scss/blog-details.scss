@@ -1,0 +1,184 @@
+@import "style";
+
+.page-header {
+  padding: 45px 0;
+}
+
+.banner {
+  min-height: 351px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto 200px;
+  background: url(../../images/blog-details/banner-bg.jpg) no-repeat center /
+    cover;
+}
+
+.article-details {
+  padding: 0 0 63px;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &__block {
+    max-width: 804px;
+    width: 100%;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: $text-color2;
+    margin: 0 0 21px;
+
+    &--style {
+      text-transform: none;
+    }
+  }
+
+  &__image-wrapper {
+    margin: 0 0 43px;
+
+    &--design-sprints {
+      margin: 0 0 35px;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 799px;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  &__date-wrapper {
+    padding: 0 70px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 0 43px;
+
+    span {
+      font-size: 16px;
+      letter-spacing: 0.01em;
+      text-transform: capitalize;
+    }
+  }
+
+  &__text {
+    letter-spacing: 0.01em;
+    margin: 0 0 33px;
+
+    &--margin40 {
+      margin: 0 0 40px;
+    }
+
+    &--design-sprints {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__design-sprints-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 0 44px;
+  }
+  &__design-sprints-item {
+    letter-spacing: 0.01em;
+    position: relative;
+    padding: 0 0 0 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &:nth-child(1)::before {
+      content: "1";
+    }
+    &:nth-child(2)::before {
+      content: "2";
+    }
+    &:nth-child(3)::before {
+      content: "3";
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      font-family: "DM Serif Display", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      color: #cda274;
+    }
+  }
+}
+
+.tags {
+  &__list {
+    max-width: 345px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__item {
+    padding: 9px 30px;
+    border-radius: 10px;
+    background: #f4f0ec;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #292f36;
+    cursor: pointer;
+
+    &--active {
+      background: #292f36;
+      color: #fff;
+    }
+  }
+}
+
+.tagline {
+  background: #f4f0ec;
+  border-radius: 50px;
+  margin: 0 0 27px;
+
+  &__wrapper {
+    padding: 59px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__image {
+    padding: 25px 0 0;
+    margin: 0 0 5px;
+  }
+  &__text {
+    max-width: 355px;
+    width: 100%;
+    font-family: "DM Serif Display", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #cda274;
+  }
+}
