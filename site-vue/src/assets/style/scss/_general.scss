@@ -1,0 +1,69 @@
+body {
+  background-color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.page-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: $text-color2;
+}
+
+.icon {
+  border-radius: 100%;
+  background-color: #f4f0ec;
+
+  &-image {
+    display: block;
+    background: url(../../images/arrow-products.svg) no-repeat center / cover;
+  }
+
+  &-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.page-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
+
+.center {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+page-logo {
+  width: 177px;
+  height: 50px;
+
+  &__link {
+    display: block;
+    width: 177px;
+    height: 50px;
+  }
+
+  &__image {
+    display: block;
+    width: 177px;
+    height: 50px;
+  }
+}
